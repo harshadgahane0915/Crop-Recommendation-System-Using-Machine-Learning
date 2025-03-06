@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation</title>
+</head>
+<body>
+    <h1>Crop Recommendation System</h1>
+    <form action="/predict" method="POST">
+        <label for="N">Nitrogen (N):</label>
+        <input type="text" name="N" required><br>
+
+        <label for="P">Phosphorus (P):</label>
+        <input type="text" name="P" required><br>
+
+        <label for="K">Potassium (K):</label>
+        <input type="text" name="K" required><br>
+
+        <label for="temperature">Temperature:</label>
+        <input type="text" name="temperature" required><br>
+
+        <label for="humidity">Humidity:</label>
+        <input type="text" name="humidity" required><br>
+
+        <label for="ph">Soil pH:</label>
+        <input type="text" name="ph" required><br>
+
+        <label for="rainfall">Rainfall:</label>
+        <input type="text" name="rainfall" required><br>
+
+        <input type="submit" value="Predict Crop">
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation</title>
+    <style>
+        /* Background image and overall page styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('/static/background.jpg'); /* Replace with actual image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form container styling */
+        .form-container {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 2em;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            color: #ffd700; /* Gold color */
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            display: block;
+            color: #ccc;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.8em;
+            margin: 0.5em 0 1em 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Crop Recommendation System</h1>
+        <form action="/predict" method="POST">
+            <label for="N">Nitrogen (N):</label>
+            <input type="text" name="N" required>
+
+            <label for="P">Phosphorus (P):</label>
+            <input type="text" name="P" required>
+
+            <label for="K">Potassium (K):</label>
+            <input type="text" name="K" required>
+
+            <label for="temperature">Temperature:</label>
+            <input type="text" name="temperature" required>
+
+            <label for="humidity">Humidity:</label>
+            <input type="text" name="humidity" required>
+
+            <label for="ph">Soil pH:</label>
+            <input type="text" name="ph" required>
+
+            <label for="rainfall">Rainfall:</label>
+            <input type="text" name="rainfall" required>
+
+            <input type="submit" value="Predict Crop">
+        </form>
+    </div>
+</body>
+</html>
+
